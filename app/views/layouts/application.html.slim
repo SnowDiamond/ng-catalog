@@ -1,0 +1,15 @@
+doctype html
+html(ng-app="Catalog")
+  head
+    title Catalog
+    = stylesheet_link_tag 'application', media: 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+    base href="/"
+  body
+    nav class="navbar navbar-default navbar-static-top" role="navigation"
+      div class="container"
+        a class="navbar-brand" href="/"
+          strong PRODUCTS CATALOG
+    div class="container"
+      div(ui-view)

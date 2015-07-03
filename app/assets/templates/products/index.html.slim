@@ -1,0 +1,12 @@
+div(ng-controller="ProductsCtrl")
+  div class="row"
+    div(dir-paginate="product in products | itemsPerPage: 4" total-items="totalProducts" current-page="pagination.current") 
+      div class="col-sm-6 col-md-3" 
+        div class="thumbnail"
+          img src="{{product.photo}}"
+          div class="caption"
+            h3 {{product.title}}
+            p 
+              strong {{product.price}} $
+              a href="/{{product.id}}" class="btn btn-primary" role="button" Details
+  dir-pagination-controls on-page-change="pageChanged(newPageNumber)"
