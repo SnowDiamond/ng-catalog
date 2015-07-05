@@ -7,7 +7,7 @@ namespace :generate do
         p.title = Faker::Commerce.product_name
         p.price = rand 100..1000
         p.description = Faker::Company.catch_phrase
-        p.photo = 'http://torrentovnet.ru/no.gif'
+        p.photo = 'no.gif'
       end
     end
   end
