@@ -13,6 +13,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'slim', '~> 3.0.6'
 gem 'faker', '~> 1.4.3'
 gem 'kaminari'
+gem 'rails_12factor', group: :production
 
 group :development, :test do
   gem 'byebug'
